@@ -6,15 +6,19 @@ I love the convenience of Spotify, but hate not being able to manage my own musi
 
 So, here's a tool to back up a Spotify library. I'd like to eventually be able to combine this with my old iTunes library, restore the library, etc. All in good time.
 
+Requires two environment variables: `SPOTIFY_ID` and `SPOTIFY_SECRET`. Get them [here](https://developer.spotify.com/dashboard/applications).
+
 ### Notes to self
 
-running executable: from repo root, assuming $HOME/go/bin is added to $PATH,
+Spotify API library: https://github.com/zmb3/spotify
+
+Running executable: from repo root, assuming $HOME/go/bin is added to $PATH,
 ```
 $ go install
 $ spotify-backup
 ```
 
-compile and test package, from package root:
+Compile and test package, from package root:
 ```
 $ go build
 $ go test
