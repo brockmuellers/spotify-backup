@@ -8,6 +8,8 @@ So, here's a tool to back up a Spotify library. I'd like to eventually be able t
 
 Requires two environment variables: `SPOTIFY_ID` and `SPOTIFY_SECRET`. Get them [here](https://developer.spotify.com/dashboard/applications).
 
+The registered application must have a redirect URI set: `http://localhost:8080/callback`
+
 ### Notes to self
 
 Spotify API library: https://github.com/zmb3/spotify
@@ -23,3 +25,5 @@ Compile and test package, from package root:
 $ go build
 $ go test
 ```
+
+Effective Go: https://golang.org/doc/effective_go.html
