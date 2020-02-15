@@ -8,11 +8,14 @@ So, here's a tool to back up a Spotify library. I'd like to eventually be able t
 
 ### Notes to self
 
-Building and running executables:
+running executable: from repo root, assuming $HOME/go/bin is added to $PATH,
+```
+$ go install
+$ spotify-backup
+```
 
+compile and test package, from package root:
 ```
-$ cd $HOME/go/src/hi
 $ go build
-$ ./hi
+$ go test
 ```
-You can run `go install` to install the binary into your workspace's bin directory or `go clean -i` to remove it.
